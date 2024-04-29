@@ -17,7 +17,7 @@ app.use(cors({
 app.use('/api', router)
 
 const start = async () => {
-  http.listen(5000, () => console.log('serever'))
+  http.listen(process.env.PORT || 10000, () => console.log('serever'))
 }
 
 start()
